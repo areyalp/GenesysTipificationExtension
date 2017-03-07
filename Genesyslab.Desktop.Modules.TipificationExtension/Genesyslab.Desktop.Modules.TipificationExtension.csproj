@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2623FAA6-F601-4431-8D74-7A69785446E0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Genesyslab.Desktop.Modules.TipificationExtension</RootNamespace>
+    <AssemblyName>Genesyslab.Desktop.Modules.TipificationExtension</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Genesyslab.Core">
+      <HintPath>GenesysLibraries\Genesyslab.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.Infrastructure">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.Modules.ActiveRecording">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.Modules.ActiveRecording.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.Modules.Broadcasting">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.Modules.Broadcasting.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.Modules.Callback">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.Modules.Callback.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.Modules.Contacts">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.Modules.Contacts.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.Modules.Core">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.Modules.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.Modules.ExtensionSample">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.Modules.ExtensionSample.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.Modules.InteractionBar">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.Modules.InteractionBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.Modules.LRMSupport">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.Modules.LRMSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.Modules.OpenMedia">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.Modules.OpenMedia.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.Modules.Outbound">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.Modules.Outbound.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.Modules.SIPEndpointCommunication">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.Modules.SIPEndpointCommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.Modules.StandardResponse">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.Modules.StandardResponse.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.Modules.Statistics">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.Modules.Statistics.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.Modules.TeamCommunicator">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.Modules.TeamCommunicator.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.Modules.TeamLead">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.Modules.TeamLead.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.Modules.Voice">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.Modules.Voice.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.Modules.VoiceMail">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.Modules.VoiceMail.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.Modules.Windows">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.Modules.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Desktop.WPFCommon">
+      <HintPath>GenesysLibraries\Genesyslab.Desktop.WPFCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.Agent">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.Agent.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.Core">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.Exceptions">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.Exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.Extensions">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.Framework">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.Framework.StateMachine">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.Framework.StateMachine.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.Interaction">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.Interaction.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.Logger">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.Model">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.PerformanceCounters">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.PerformanceCounters.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.Protocols">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.PSDKExtensions">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.PSDKExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.Services">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.Services.Callback">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.Services.Callback.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.Services.Common">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.Services.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.Services.Contact">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.Services.Contact.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.Services.Multimedia">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.Services.Multimedia.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.Services.Multimedia.Email">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.Services.Multimedia.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.Services.Outbound">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.Services.Outbound.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.Services.Presence">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.Services.Presence.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.SwitchAbstraction">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.SwitchAbstraction.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Enterprise.Utility">
+      <HintPath>GenesysLibraries\Genesyslab.Enterprise.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.ApplicationBlocks.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Broker">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Protocols">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.SipEndpoint">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.ApplicationBlocks.SipEndpoint.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.WarmStandby">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.ApplicationBlocks.WarmStandby.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Collections">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.Commons.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Collections.Binding">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.Commons.Collections.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Connection">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.Commons.Connection.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Protocols">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.Commons.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Configuration.Protocols">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.Configuration.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Contacts.Protocols">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.Contacts.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Logging">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Management.Protocols">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.Management.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.OpenMedia.Protocols">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.OpenMedia.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Outbound.Protocols">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.Outbound.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Reporting.Protocols">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.Reporting.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Routing.Protocols">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.Routing.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.SwitchPolicy">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.SwitchPolicy.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Voice.Protocols">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.Voice.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.WebMedia.Protocols">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.WebMedia.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.WebMedia.Protocols.EspEmail">
+      <HintPath>GenesysLibraries\Genesyslab.Platform.WebMedia.Protocols.EspEmail.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Composite">
+      <HintPath>GenesysLibraries\Microsoft.Practices.Composite.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Composite.UnityExtensions">
+      <HintPath>GenesysLibraries\Microsoft.Practices.Composite.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Composite.Wpf">
+      <HintPath>GenesysLibraries\Microsoft.Practices.Composite.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComboTipification\ComboTipification.xaml.cs">
+      <DependentUpon>ComboTipification.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ComboTipification\ComboTipificationModel.cs" />
+    <Compile Include="ComboTipification\IComboTipificationView.cs" />
+    <Compile Include="ComboTipification\IComboTipificationViewModel.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="TipificationExtensionModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GenesysLibraries\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ComboTipification\ComboTipification.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
