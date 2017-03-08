@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Genesyslab.Desktop.Modules.TipificationExtension
 {
@@ -11,7 +9,7 @@ namespace Genesyslab.Desktop.Modules.TipificationExtension
     {
 
         readonly IConfigManager confManager;
-        readonly bool pluginState = false;
+        readonly bool pluginState;
 
         public Configuration(IConfigManager confManager)
         {

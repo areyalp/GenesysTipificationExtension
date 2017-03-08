@@ -255,8 +255,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComboTipification\ComboTipification.xaml.cs">
-      <DependentUpon>ComboTipification.xaml</DependentUpon>
+    <Compile Include="ComboTipification\ComboTipificationView.xaml.cs">
+      <DependentUpon>ComboTipificationView.xaml</DependentUpon>
     </Compile>
     <Compile Include="ComboTipification\ComboTipificationModel.cs" />
     <Compile Include="ComboTipification\IComboTipificationView.cs" />
@@ -269,7 +269,7 @@
     <Folder Include="GenesysLibraries\" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="ComboTipification\ComboTipification.xaml">
+    <Page Include="ComboTipification\ComboTipificationView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
